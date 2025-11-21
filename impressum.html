@@ -2,12 +2,13 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>Impressum & Datenschutz – netzritter / Nicolas Heyer</title>
+  <title>Impressum – netzritter / Nicolas Heyer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Impressum und Datenschutz von netzritter.com (Nicolas Heyer, Smart Mobility GmbH).">
+  <meta name="description" content="Impressum und Datenschutzerklärung von netzritter.com (Nicolas Heyer / Smart Mobility GmbH).">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">netzritter</a>
@@ -22,45 +23,67 @@
 </header>
 
 <main>
-  <section class="section">
+  <section class="section reveal">
     <div class="container">
       <h1>Impressum</h1>
 
-      <!-- Hier Impressumsangaben von der aktuellen Seite einfügen -->
-      <!-- Beispiel-Struktur – bitte mit deinen echten Daten ersetzen/befüllen: -->
-
-      <p><strong>Verantwortlich für den Inhalt dieser Seite:</strong></p>
+      <p><strong>Angaben gemäß § 5 TMG</strong></p>
       <p>
         Smart Mobility GmbH<br>
         z. Hd. Nicolas Heyer<br>
         Johannisthaler Chaussee 206 B<br>
-        D-12351 Berlin
+        12351 Berlin<br>
+        Deutschland
       </p>
 
       <p>
-        E-Mail: <a href="mailto:nicolas@projectx.one">nicolas@projectx.one</a><br>
-        Registereintrag: HRB 183039 B<br>
-        Umsatzsteuer-ID: DE 310051975
+        Handelsregister: HRB 183039 B<br>
+        Registergericht: Amtsgericht Charlottenburg (Berlin)<br>
+        Umsatzsteuer-Identifikationsnummer: DE 310051975
       </p>
-
-      <h2>Datenschutz</h2>
-
-      <!-- Ab hier den vollständigen DSGVO-Text deiner aktuellen Seite einfügen.
-           Du kannst ihn 1:1 aus dem bestehenden HTML übernehmen. -->
 
       <p>
-        In diesen Datenschutzbestimmungen stellt die Smart Mobility GmbH („wir“, „unser“
-        oder „das Unternehmen“) im Auftrag von Herrn Nicolas Heyer seine Vorgehensweise
-        bezüglich der von Benutzern erfassten Daten dar, die auf unsere Webseite unter
-        www.netzritter.com („Webseite“) zugreifen oder uns auf andere Weise personenbezogene
-        Daten bereitstellen (gemeinsam: „Benutzer“).
+        E-Mail: <a href="mailto:nicolas@projectx.one">nicolas@projectx.one</a>
       </p>
 
-      <!-- ... hier den restlichen Text einkopieren ... -->
-
-      <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--muted);">
-        Zuletzt aktualisiert am 19. April 2025.
+      <h2>Haftung für Inhalte</h2>
+      <p>
+        Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
+        Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.
+        Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten
+        nach den allgemeinen Gesetzen verantwortlich.
       </p>
+
+      <h2>Haftung für Links</h2>
+      <p>
+        Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe.
+        Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+        verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      </p>
+
+      <h2>Urheberrecht</h2>
+      <p>
+        Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
+        deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung,
+        Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes
+        bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+      </p>
+
+      <h2>Datenschutzerklärung</h2>
+      <p>
+        Nachfolgend wird ein Platzhalter für die Datenschutzerklärung angezeigt. Bitte füge hier deine
+        aktuelle, vollständige Datenschutzerklärung gemäß DSGVO ein (z.B. aus deinem bisherigen
+        netzritter.com-Auftritt übernommen oder durch einen Generator/Anwalt erstellt).
+      </p>
+
+      <!-- HIER deinen echten DSGVO-Text einfügen -->
+      <div class="card" style="margin-top: 1.5rem;">
+        <p style="margin: 0; font-size: 0.95rem; color: var(--muted);">
+          <em>Platzhalter für die Datenschutzerklärung. Bitte hier deinen vollständigen
+          Datenschutztext einfügen.</em>
+        </p>
+      </div>
+
     </div>
   </section>
 </main>
@@ -68,12 +91,35 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© <span id="year"></span> netzritter · Nicolas Heyer</p>
-    <p><a href="impressum.html">Impressum & Datenschutz</a></p>
+    <p><a href="impressum.html">Impressum &amp; Datenschutz</a></p>
   </div>
 </footer>
 
 <script>
+  // Jahr im Footer aktualisieren
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll-Reveal für .reveal-Elemente
+  const reveals = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window && reveals.length > 0) {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    reveals.forEach(el => observer.observe(el));
+  } else {
+    // Fallback für alte Browser
+    reveals.forEach(el => el.classList.add('is-visible'));
+  }
 </script>
 </body>
 </html>

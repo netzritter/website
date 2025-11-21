@@ -10,6 +10,9 @@
   --shadow-soft: 0 18px 35px rgba(0, 0, 0, 0.45);
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
+
+  /* Ferrari Red */
+  --ferrari: #ff2800;
 }
 
 *,
@@ -87,10 +90,12 @@ a {
   background: rgba(255, 255, 255, 0.02);
 }
 
+/* ACTIVE STATE – Ferrari Red */
+
 .nav-link.is-active {
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  color: #111;
+  background: rgba(255, 40, 0, 0.20); /* Ferrari rot, 20% */
+  border-color: var(--ferrari);
+  color: var(--ferrari);
 }
 
 /* Hero */
@@ -186,6 +191,10 @@ a {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -215,14 +224,7 @@ a {
   color: var(--accent);
 }
 
-.card-meta {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-top: 0.4rem;
-}
-
-
-/* Listen */
+/* Feature Lists */
 
 .feature-list {
   list-style: none;
@@ -272,6 +274,10 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .grid-2 {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -291,7 +297,8 @@ a {
 }
 
 @media (max-width: 600px) {
-  .grid-4 {
+  .grid-4,
+  .grid-3 {
     grid-template-columns: minmax(0, 1fr);
   }
 

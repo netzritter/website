@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <title>Biografie – netzritter / Nicolas Heyer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Biografie von Nicolas Heyer – Stationen, Erfahrungen und Way of Life zwischen Bundeswehr, High-Tech, Raumfahrt und Digitalisierung.">
+  <meta name="description" content="Die Biografie von Nicolas Heyer – Stationen, Erfahrungen und persönlicher Werdegang.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="logo">netzritter</a>
@@ -22,73 +23,97 @@
 </header>
 
 <main>
-  <section class="section">
+
+  <!-- Intro -->
+  <section class="section reveal">
     <div class="container grid grid-2">
       <div>
         <h1>Biografie</h1>
         <p>
-          Ich habe das große Glück, mein Leben an Schnittstellen zu verbringen:
-          zwischen Technik und Menschen, zwischen Militär und Zivilgesellschaft,
-          zwischen Moonshots und bodenständiger Umsetzung.
+          Meine berufliche Reise führte mich von der Bundeswehr über internationale Einsätze
+          bis hin zu High-Tech-Unternehmen und eigenen Projekten. Immer an den Schnittstellen
+          von Technologie, Menschen und Verantwortung.
         </p>
 
         <h2>Way of Life</h2>
         <p>
-          Meine berufliche Reise begann als Offizier und Hubschrauberpilot bei der Bundeswehr.
-          Später arbeitete ich als Pressesprecher und Referent für Digitale Transformation,
-          bevor ich in internationale Einsätze ging – unter anderem als
-          Chefunterhändler der NATO in Afghanistan.
+          Als Offizier, Hubschrauberpilot und später Chefunterhändler der NATO in Afghanistan
+          lernte ich komplexe Umgebungen kennen, in denen Mut, Disziplin und Teamgeist zählen.
         </p>
         <p>
-          Danach wechselte ich in die Welt der High-Tech-Unternehmen:
-          Raumfahrt-Start-ups, Softwarekonzerne, Google und innovationsgetriebene Mittelständler.
-          Heute bewege ich mich mit eigenen Unternehmen im Spannungsfeld von
-          Mobilität, Blockchain, Cyber-Innovation und digitalen Ökosystemen.
+          Danach folgten Stationen in Raumfahrt, Medizintechnik, Software und Sicherheit –
+          oft in Führungspositionen, immer mit Innovationsfokus.
         </p>
         <p>
-          Zwischendurch durfte ich immer wieder an Projekten mitarbeiten, die größer sind
-          als ich selbst: Satellitenkonstellationen ins All bringen, die digitale Transformation
-          der Bundeswehr mitgestalten oder Innovationen in der Medizintechnik vorantreiben.
+          Heute arbeite ich mit eigenen Unternehmen im Spannungsfeld aus Mobilität,
+          Digitalisierung, Blockchain und neuen Infrastrukturen.
         </p>
       </div>
 
       <div>
         <h2>Steckbrief</h2>
         <ul class="feature-list">
-          <li>Berufliche Stationen in Verteidigung, Raumfahrt, Medizintechnik & Software.</li>
-          <li>Gründung und Führung mehrerer Unternehmen und Innovationseinheiten.</li>
-          <li>Hintergrund in Ingenieurwissenschaften mit Fokus auf Energie & Atomphysik.</li>
-          <li>Mitgründer des Bundeswehr Cyber Innovation Hubs und weiterer Digitalprojekte.</li>
-          <li>Mitglied der Clausewitz-Gesellschaft und Alumnus der Führungsakademie der Bundeswehr.</li>
-        </ul>
-
-        <h3>Sprachen & Kultur</h3>
-        <ul class="feature-list">
-          <li>Deutsch (Muttersprache), Englisch (fließend).</li>
-          <li>Spanisch und Französisch – einsatzbereit, wenn es drauf ankommt.</li>
-          <li>Persisch-Kenntnisse und Berlinerisch – beides hilfreich an der richtigen Stelle.</li>
-        </ul>
-
-        <h3>Was mich antreibt</h3>
-        <ul class="feature-list">
-          <li>Neugier auf Technologien mit echtem Impact – gern mit Rädern, Flügeln oder Orbit.</li>
-          <li>Arbeiten mit Teams, die Dinge wirklich verändern wollen.</li>
-          <li>Die Balance aus Verantwortung, Abenteuer und einer guten Portion Humor.</li>
+          <li>Berufliche Stationen in Verteidigung, Raumfahrt, Medizintechnik und Software.</li>
+          <li>Führungserfahrung in komplexen sicherheitskritischen Umgebungen.</li>
+          <li>Mitgründer und aktiver Gestalter mehrerer Innovationsinitiativen.</li>
+          <li>Sprachen: Deutsch, Englisch, Spanisch, Französisch und Persisch (Grundkenntnisse).</li>
+          <li>Interessen: Technologie, Mobilität, Musik, Kulturen.</li>
         </ul>
       </div>
     </div>
   </section>
+
+  <!-- Ergänzender Abschnitt -->
+  <section class="section section-alt reveal">
+    <div class="container">
+      <h2>Persönlicher Fokus</h2>
+      <p>
+        Ob in Uniform, in Unternehmen, auf internationalen Bühnen oder in zivilen
+        Innovationsprojekten – für mich steht immer der Mensch im Mittelpunkt.
+        Technologie ist ein Werkzeug. Haltung, Mut und Klarheit sind der Kern.
+      </p>
+      <p>
+        Mein Weg ist geprägt von Verantwortung und der Begeisterung für echte Lösungen:
+        mobil, digital, resilient – und immer mit dem Anspruch, nachhaltig zu wirken.
+      </p>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© <span id="year"></span> netzritter · Nicolas Heyer</p>
-    <p><a href="impressum.html">Impressum & Datenschutz</a></p>
+    <p><a href="impressum.html">Impressum &amp; Datenschutz</a></p>
   </div>
 </footer>
 
 <script>
+  // Jahr aktualisieren
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll-Reveal logik
+  const reveals = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window && reveals.length > 0) {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    reveals.forEach(el => observer.observe(el));
+  } else {
+    // Fallback
+    reveals.forEach(el => el.classList.add('is-visible'));
+  }
 </script>
 </body>
 </html>
+
