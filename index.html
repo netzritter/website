@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>netzritter – Nicolas Heyer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Herzlich Willkommen auf meiner Webseite. Hier findest Du Leidenschaften, Aktivitäten und Biografie von Nicolas Heyer.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">netzritter</a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link is-active">Home</a>
+        <a href="leidenschaften.html" class="nav-link">Leidenschaften</a>
+        <a href="aktivitaeten.html" class="nav-link">Aktivitäten</a>
+        <a href="biografie.html" class="nav-link">Biografie</a>
+        <a href="impressum.html" class="nav-link">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero-Bereich -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">Herzlich Willkommen</p>
+          <h1>Ich kartographiere mein erfülltes & spannendes (Arbeits-)Leben.</h1>
+          <p class="hero-sub">
+            In den folgenden Kapiteln findest Du Leidenschaften, Aktivitäten und
+            Stationen meines Lebens. Viel Spaß beim Entdecken meiner Geheimnisse.
+          </p>
+          <a href="leidenschaften.html" class="btn-primary">
+            Zu meinen Leidenschaften
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlight-Kacheln wie auf deiner Startseite -->
+    <section class="section">
+      <div class="container">
+        <h2>Aktivitäten der vergangenen Jahre</h2>
+        <div class="grid grid-4">
+          <article class="card">
+            <h3>Projekte</h3>
+            <p>Eine Auswahl meiner spannendsten Vorhaben der letzten Jahre.</p>
+            <a href="leidenschaften.html" class="card-link">Mehr erfahren →</a>
+          </article>
+          <article class="card">
+            <h3>Dreharbeiten</h3>
+            <p>Film- & Serienprojekte von Operation Walküre bis Homeland.</p>
+            <a href="aktivitaeten.html#film" class="card-link">Zu Filmprojekten →</a>
+          </article>
+          <article class="card">
+            <h3>Medien</h3>
+            <p>Öffentliche Auftritte, Artikel & Berichterstattung.</p>
+            <a href="aktivitaeten.html#fernsehen" class="card-link">Zu Medienauftritten →</a>
+          </article>
+          <article class="card">
+            <h3>Events</h3>
+            <p>Pitch-Events, Konferenzen & Bühnenauftritte.</p>
+            <a href="aktivitaeten.html#events" class="card-link">Zu Events →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kurzer Teaser Biografie -->
+    <section class="section section-alt">
+      <div class="container grid grid-2">
+        <div>
+          <h2>Way of Life</h2>
+          <p>
+            Vom Hubschrauberpiloten und Chefunterhändler der NATO in Afghanistan
+            bis zu Führungspositionen in High-Tech-Unternehmen – mein Weg verbindet
+            Verteidigung, Raumfahrt, Medizin und digitale Innovation.
+          </p>
+          <a href="biografie.html" class="btn-outline">Zur Biografie</a>
+        </div>
+        <div>
+          <h3>Special Skills</h3>
+          <ul class="feature-list">
+            <li>Bewege gerne Dinge mit Rädern, Flügeln oder innovativen Technologien.</li>
+            <li>Sprachakzente: Deutsch, Englisch, Spanisch, Französisch, Persisch & Berlinerisch.</li>
+            <li>Musik: Elektro & Punk Rock, Tanzen: Ska & Pogo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> netzritter · Nicolas Heyer</p>
+      <p><a href="impressum.html">Impressum & Datenschutz</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Aktuelles Jahr im Footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
