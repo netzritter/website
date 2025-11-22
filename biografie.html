@@ -5,6 +5,20 @@
   <title>Biografie – netzritter / Nicolas Heyer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Die Biografie von Nicolas Heyer – Stationen, Erfahrungen und persönlicher Werdegang.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Biografie – Nicolas Heyer">
+  <meta property="og:description" content="Vom Hubschrauberpiloten &amp; NATO-Unterhändler zu Hightech, Innovation und digitalen Ökosystemen.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://netzritter.github.io/website/biografie.html">
+  <meta property="og:image" content="https://netzritter.github.io/website/assets/img/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Biografie – Nicolas Heyer">
+  <meta name="twitter:description" content="Werdegang, Stationen &amp; persönlicher Fokus.">
+  <meta name="twitter:image" content="https://netzritter.github.io/website/assets/img/og-image.png">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -89,10 +103,8 @@
 </footer>
 
 <script>
-  // Jahr aktualisieren
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Scroll-Reveal logik
   const reveals = document.querySelectorAll('.reveal');
 
   if ('IntersectionObserver' in window && reveals.length > 0) {
@@ -110,10 +122,8 @@
 
     reveals.forEach(el => observer.observe(el));
   } else {
-    // Fallback
     reveals.forEach(el => el.classList.add('is-visible'));
   }
 </script>
 </body>
 </html>
-
